@@ -16,7 +16,7 @@ CLASS zcx_vault DEFINITION
         attr4    TYPE string OPTIONAL.
 
     CONSTANTS: BEGIN OF generic,
-                 msgid TYPE symsgid      VALUE 'ZAULT',
+                 msgid TYPE symsgid      VALUE 'ZVAULT',
                  msgno TYPE symsgno      VALUE '000',
                  attr1 TYPE scx_attrname VALUE 'ATTR1',
                  attr2 TYPE scx_attrname VALUE 'ATTR2',

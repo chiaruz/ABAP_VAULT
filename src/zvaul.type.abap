@@ -32,7 +32,7 @@ TYPES: BEGIN OF zvaul_login_request,
 
 
 TYPES: BEGIN OF zvaul_totpt_create,
-         generate      TYPE string,
+         generate      TYPE xfeld,
          issuer        TYPE string,
          account__name TYPE string,
          period        TYPE int2,
@@ -41,7 +41,7 @@ TYPES: BEGIN OF zvaul_totpt_create,
        END OF zvaul_totpt_create.
 
 TYPES: BEGIN OF zvaul_totpt_data,
-         barcode TYPE xstring,
+         barcode TYPE string,
          url     TYPE string,
        END OF zvaul_totpt_data.
 
@@ -61,8 +61,9 @@ TYPES: BEGIN OF zvaul_totpt_code,
        END OF zvaul_totpt_code.
 
 TYPES: BEGIN OF zvaul_totpt_code_data,
-         code TYPE string,
+         code  TYPE string,
          valid TYPE xfeld,
+         keys  TYPE STANDARD TABLE OF string WITH DEFAULT KEY,
        END OF zvaul_totpt_code_data.
 
 TYPES: BEGIN OF zvaul_totpt_code_resp,
